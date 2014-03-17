@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>TeamCity Companion - your mobile companion app for TeamCity</title>
+    <title>TeamCity Companion</title>
   </head>
 
   <body>
@@ -23,7 +23,7 @@
 
         <hr>
 
-      <section id="main_content">
+        <section id="main_content">
           <h3>
 <a name="tc-why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why a mobile app?</h3>
 
@@ -43,11 +43,44 @@ The core features of TeamCity Companion are as follows:
 
 <ul>
   <li>Configure multiple TeamCity servers</li>
+  <li>Single sign-on</li>
   <li>View and filter projects and builds</li>
   <li>Flag build types and set up notifications for build failures</li>
 </ul>
 
 </p>
+
+
+<a name="tc-multiple-servers" class="anchor" href="#multiple_servers"><span class="octicon octicon-link"></span></a>Multiple TeamCity Servers</h3>
+<p>
+You can configure any number of TeamCity servers, so it is easy to keep track of your open-source projects 
+that might be hosted elsewhere as well as day-job builds at the same time.
+
+</p>
+
+
+<a name="tc-single-sign-on" class="anchor" href="#single_sign_on"><span class="octicon octicon-link"></span></a>Single Sign-On</h3>
+<p>
+Your credentials are securely saved in the ios key chain and used only to authenticate to the configured TeamCity server.
+You can hop right on to the server from the app without having to re-authenticate.
+</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
