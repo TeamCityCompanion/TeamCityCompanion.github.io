@@ -68,35 +68,45 @@ that might be hosted and tested elsewhere as well as your day-job builds at the 
 <a name="tc-single-sign-on" class="anchor" href="#single_sign_on"><span class="octicon octicon-link"></span></a>Single Sign-On</h3>
 <p>
 Your credentials are securely saved in the ios Keychain and used only to authenticate to the configured TeamCity server.
-You can hop right on to the server from the app without having to re-authenticate - never type in your user name / password again.
+You can hop right on to the server from the app (e.g. to review build result details) without having to re-authenticate - never type in your user name / password again.
 </p>
 
 
 <h3>
 <a name="tc-view-filter-projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>View and filter projects and builds</h3>
 <p>
-You can display all of your projects or just the ones you have tagged, thus filtering to the few you are interested in.
-This view shows all the important stuff
+All projects are listed in alphabetical order, optionally filtered to only show "tagged" projects. 
+A project can be tagged by toggling it's tag indicator. 
+
+This view displayes the following information:
+
 <ul>
-  <li>Name and last result of each build type for each expanded project</li>
+  <li>Name and last result (failure or success) of each build type for each expanded project</li>
   <li>Time each built ran (if available)</li>
   <li>An indicator for builds currently still running and their pending result</li>
 </ul>
+
+Tapping a project expands or minimized it - build information is only shown for expanded projects.
+<br/>
+Tapping a build result navigates to the build result details view.
+
+
 
 <img style="display:block;margin-left:auto;margin-right:auto" width="320" src = "https://f.cloud.github.com/assets/6765515/2435972/055cb69a-add3-11e3-9166-734b73684475.png" />
 </p>
 
 <h3>
-<a name="tc-flaggedbuilds" class="anchor" href="#flaggedbuilds"><span class="octicon octicon-link"></span></a>Flag builds</h3>
+<a name="tc-flaggedbuilds" class="anchor" href="#flaggedbuilds"><span class="octicon octicon-link"></span></a>Flag build types</h3>
 <p>
-Flag any build so it appears in the special flagged builds view that gives you a concise summary of the last outcome of these builds only.
+Flag any build type so you can keep track of them in a the special flagged build types view that gives you a concise summary of the last outcome of these builds only.
 </p>
 
 <h3>
 <a name="tc-stream" class="anchor" href="#stream"><span class="octicon octicon-link"></span></a>View build stream</h3>
 <p>
 Review the latest activity of build results on all serves. Ordered by time, and optionally only showing failing builds
-this gives you a quick overview of how your TeamCity builds are doing currently.
+this gives you a quick overview of how your TeamCity servers are doing currently. 
+This can be useful if you are involved in many projects, or are maintaining build environments.
 </p>
 
 <h3>
